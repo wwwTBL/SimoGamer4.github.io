@@ -1,6 +1,49 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+li {
+    float: left;
+}
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: #4CAF50;
+}
+li.dropdown {
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+</style>
 <title>Physicar</title>
 <link rel="ico" src="concept.ico" type="image/x-icon"/>
 <link rel="shortcut ico" src="concept.ico" type="image/x-icon"/>
@@ -8,6 +51,17 @@
 <meta-name="keywords"></meta-name>
 </head>
 <body style="background-color:grey"; link-color="blue"; alink-color="red"; vlink-color="blue">
+<ul>
+  <li><a class="active" href="simogamer4.github.io">Home</a></li>
+  <li class="dropdown">
+    <a href="simogamer4.github.io" class="dropbtn">Macchine</a>
+    <div class="dropdown-content">
+      <a href="Guidando attraverso la fisica.html">Guidando attraverso la fisica</a>
+      <a href="Physicar's gallery.html">Physicar's gallery</a>
+      <a href="Physicar's news.html">Physicar's news</a>
+    </div>
+  </li>
+  </ul>
 <br><br><br>
 <marquee>
 <h1 align="center"><font size="7"; color="blue"; face="TIME NEW ROMANS"><b><i>PHYSICAR</i></b></font></h1>
@@ -18,11 +72,11 @@
 <center>
 <img src="concept.jpg" style="loaft:right">
 <br><br>
-<a href="Guidando attraverso la fisica.html">Guidando attraverso la fisica</a>
+
 <br>
-<a href="Physicar's gallery.html">Physicar's gallery</a>
+
 <br>
-<a href="Physicar's news.html">Physicar's news</a>
+
 </center>
 </body>
 </html>
